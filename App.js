@@ -1,16 +1,9 @@
 import {StatusBar} from 'expo-status-bar';
-
-import {
-  Image,
-  TouchableOpacity,
-  FlatList,
-  StyleSheet,
-  Text,
-  View,
-  SafeAreaView,
-} from 'react-native';
+import {StyleSheet, SafeAreaView} from 'react-native';
+import List from './components/List';
 
 const App = () => {
+  //console.log('App starting!')
   return (
     <>
       <SafeAreaView style={styles.container}>
@@ -21,6 +14,8 @@ const App = () => {
   );
 };
 
+export default App;
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -29,5 +24,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
-export default App;
